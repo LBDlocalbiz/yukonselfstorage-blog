@@ -1,0 +1,11 @@
+# Yukon Self Storage Blog - robots.txt
+# https://blog.yukonselfstorage.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://blog.yukonselfstorage.com/sitemap.xml
+
+# Disallow template files
+Disallow: /posts/_post-template.html

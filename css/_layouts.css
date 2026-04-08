@@ -1,0 +1,219 @@
+/* =============================================================================
+   Yukon Self Storage - Layout Patterns
+   ============================================================================= */
+
+/* Container */
+.yss-container {
+  max-width: var(--yss-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--yss-space-4);
+  padding-right: var(--yss-space-4);
+}
+
+@media (min-width: 640px) {
+  .yss-container {
+    padding-left: var(--yss-space-6);
+    padding-right: var(--yss-space-6);
+  }
+}
+
+@media (min-width: 1024px) {
+  .yss-container {
+    padding-left: var(--yss-space-8);
+    padding-right: var(--yss-space-8);
+  }
+}
+
+/* Sections */
+.yss-section {
+  padding-top: var(--yss-space-12);
+  padding-bottom: var(--yss-space-12);
+}
+
+@media (min-width: 640px) {
+  .yss-section {
+    padding-top: var(--yss-space-16);
+    padding-bottom: var(--yss-space-16);
+  }
+}
+
+@media (min-width: 1024px) {
+  .yss-section {
+    padding-top: var(--yss-space-20);
+    padding-bottom: var(--yss-space-20);
+  }
+}
+
+/* Section Modifiers */
+.yss-section--white {
+  background-color: var(--yss-bg);
+}
+
+.yss-section--gray {
+  background-color: var(--yss-bg-alt);
+}
+
+.yss-section--primary {
+  background-color: var(--yss-primary);
+  color: white;
+}
+
+.yss-section--primary-light {
+  background-color: var(--yss-primary-50);
+}
+
+.yss-section--dark {
+  background-color: var(--yss-gray-900);
+  color: white;
+}
+
+/* Section Header */
+.yss-section-header {
+  text-align: center;
+  margin-bottom: var(--yss-space-12);
+}
+
+.yss-section-header--left {
+  text-align: left;
+}
+
+.yss-section-header__eyebrow {
+  color: var(--yss-primary);
+  font-weight: 600;
+  font-size: var(--yss-text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--yss-space-2);
+}
+
+.yss-section--primary .yss-section-header__eyebrow {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.yss-section-header__title {
+  font-size: var(--yss-text-3xl);
+  font-weight: 700;
+  color: var(--yss-text);
+  margin-bottom: var(--yss-space-4);
+}
+
+@media (min-width: 640px) {
+  .yss-section-header__title {
+    font-size: var(--yss-text-4xl);
+  }
+}
+
+.yss-section--primary .yss-section-header__title,
+.yss-section--dark .yss-section-header__title {
+  color: white;
+}
+
+.yss-section-header__subtitle {
+  color: var(--yss-text-muted);
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: var(--yss-text-lg);
+}
+
+.yss-section--primary .yss-section-header__subtitle,
+.yss-section--dark .yss-section-header__subtitle {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.yss-section-header--left .yss-section-header__subtitle {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Grid Systems */
+.yss-grid {
+  display: grid;
+  gap: var(--yss-space-8);
+}
+
+.yss-grid--2 {
+  grid-template-columns: 1fr;
+}
+
+.yss-grid--3 {
+  grid-template-columns: 1fr;
+}
+
+.yss-grid--4 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 640px) {
+  .yss-grid--2 { grid-template-columns: repeat(2, 1fr); }
+  .yss-grid--4 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 768px) {
+  .yss-grid--3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .yss-grid--4 { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* Two Column Layout */
+.yss-layout-2col {
+  display: grid;
+  gap: var(--yss-space-8);
+}
+
+@media (min-width: 1024px) {
+  .yss-layout-2col {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--yss-space-12);
+  }
+}
+
+/* Flex Utilities */
+.yss-flex {
+  display: flex;
+}
+
+.yss-flex-col {
+  flex-direction: column;
+}
+
+.yss-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.yss-items-center {
+  align-items: center;
+}
+
+.yss-justify-center {
+  justify-content: center;
+}
+
+.yss-justify-between {
+  justify-content: space-between;
+}
+
+.yss-gap-2 { gap: var(--yss-space-2); }
+.yss-gap-3 { gap: var(--yss-space-3); }
+.yss-gap-4 { gap: var(--yss-space-4); }
+.yss-gap-6 { gap: var(--yss-space-6); }
+.yss-gap-8 { gap: var(--yss-space-8); }
+
+/* Text Alignment */
+.yss-text-center { text-align: center; }
+.yss-text-left { text-align: left; }
+.yss-text-right { text-align: right; }
+
+/* Spacing Utilities */
+.yss-mt-4 { margin-top: var(--yss-space-4); }
+.yss-mt-6 { margin-top: var(--yss-space-6); }
+.yss-mt-8 { margin-top: var(--yss-space-8); }
+.yss-mt-12 { margin-top: var(--yss-space-12); }
+
+.yss-mb-4 { margin-bottom: var(--yss-space-4); }
+.yss-mb-6 { margin-bottom: var(--yss-space-6); }
+.yss-mb-8 { margin-bottom: var(--yss-space-8); }
+.yss-mb-12 { margin-bottom: var(--yss-space-12); }

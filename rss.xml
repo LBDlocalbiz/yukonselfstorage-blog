@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yukon Self Storage Blog</title>
+    <description>Storage tips, moving guides, and local area news from Yukon Self Storage in Canadian County, OK.</description>
+    <link>https://blog.yukonselfstorage.com/</link>
+    <atom:link href="https://blog.yukonselfstorage.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <language>en-us</language>
+    <lastBuildDate>2026-04-08</lastBuildDate>
+
+    <item>
+      <title>Welcome to the Yukon Self Storage Blog</title>
+      <description>Your go-to resource for storage tips, moving guides, and local area news from Yukon Self Storage in Canadian County, OK.</description>
+      <link>https://blog.yukonselfstorage.com/posts/2026-04-08-welcome-to-yukon-self-storage-blog.html</link>
+      <guid>https://blog.yukonselfstorage.com/posts/2026-04-08-welcome-to-yukon-self-storage-blog.html</guid>
+      <pubDate>2026-04-08</pubDate>
+    </item>
+  </channel>
+</rss>
